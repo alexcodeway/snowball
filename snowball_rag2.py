@@ -52,14 +52,22 @@ chain = ({"context": retriever, "question": RunnablePassthrough()}
                       | StrOutputParser())
 
 query = 'Why was the Shiba developed?'
+print(query)
 answer = chain.invoke(query)
 print(answer)
 
 query = 'Who are you?'
+print(query)
+answer = chain.invoke(query)
+print(answer)
+
+query = 'What is your favorite food?'
+print(query)
 answer = chain.invoke(query)
 print(answer)
 
 query = 'What did you do on April 17 2024'
+print(query)
 answer = chain.invoke(query)
 print(answer)
 
